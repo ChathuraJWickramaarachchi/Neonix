@@ -1,0 +1,92 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(125deg, #0B0C10 , #161925);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e0d8d8;
+    
+}
+div {
+    background: linear-gradle(100deg, #212529, #868E96 );
+    padding: 20px 25px;
+    border-radius: 60px;
+    box-shadow: 0 10px 30px rgba(180, 179, 179, 0.2);
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+     border: 1px solid hsl(287, 52%, 52%);
+    border-radius: 12px;
+    box-shadow:
+        0 0 5px #9f4aa2,
+        0 0 15px #9f4aa2,
+        0 0 30px #9f4aa2;
+    animation: neonPulse 2.5s infinite alternate;
+}
+
+@keyframes neonPulse {
+    from {
+        box-shadow:
+            0 0 5px #9f4aa2,
+            0 0 15px #9f4aa2;
+    }
+    to {
+        box-shadow:
+            0 0 10px #9f4aa2,
+            0 0 28px #9f4aa2,
+            0 0 30px #9f4aa2;
+    }
+}
+footer{
+    /*margin-top: 450px;*/
+    text-align: center;
+}
+#input {
+    padding: 10px 14px;
+    width: 220px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#input:focus {
+    border-color: #667eea;
+}
+
+/* Button */
+button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    background: #2934cf;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+/* Image */
+.img {
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    display: none; /* show it via JS when image loads */
+}
+
+/* Description text */
+#description {
+    margin-top: 15px;
+    max-width: 320px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.5;
+}
